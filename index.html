@@ -8,10 +8,16 @@
       font-family: Arial, sans-serif;
       margin: 2em;
     }
-    input {
+    input[type="text"] {
       padding: 5px;
       width: 300px;
       margin-bottom: 1em;
+    }
+    .filters {
+      margin-bottom: 1em;
+    }
+    .filter-group {
+      margin-bottom: 10px;
     }
     table {
       border-collapse: collapse;
@@ -33,9 +39,11 @@
 </head>
 <body>
 
-  <h1>Tableau des Tailles de VM Azure</h1>
+  <h1>Tailles de VM Azure</h1>
 
-  <input type="text" id="search" placeholder="Filtrer par mot-clé...">
+  <input type="text" id="search" placeholder="Recherche globale...">
+
+  <div class="filters" id="checkbox-filters"></div>
 
   <table id="data-table">
     <thead></thead>
