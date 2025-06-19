@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>VM Sizes Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+    input {
+      padding: 5px;
+      width: 300px;
+      margin-bottom: 1em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tableau des Tailles de VM Azure</h1>
+
+  <input type="text" id="search" placeholder="Filtrer par mot-clé...">
+
+  <table id="data-table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
